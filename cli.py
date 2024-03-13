@@ -15,7 +15,7 @@ def parse_args(parser: ArgumentParser):
         help="specify a domain"
     )
     parser.add_argument(
-        '-k', '--api-kye',
+        '-k', '--api-key',
         dest='api_key',
         required=True,
         type=str,
