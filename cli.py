@@ -81,6 +81,9 @@ def main():
     emails = get_emails(args.domain)
     breaches = []
     for email in emails:
+        if not email:
+            continue
+
         print(f"Searching... Email: {email}")
         try:
             breaches.extend(check(email, args.api_key))
